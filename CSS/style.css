@@ -1,0 +1,33 @@
+body {
+  background: #eef5ff;
+}
+.main-icon {
+  background: linear-gradient(to right, #3b82f6, #4f46e5);
+}
+.siteTitle, .title h3 {
+  background: linear-gradient(to left , #1e293b, #2563eb, #4f46e5);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.formContainer, .bookmarksTable {
+  background-color: #fcfdff;
+ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#newBkMrkBtn{
+  background: linear-gradient(to right, #3b82f6, #4f46e5);
+  color: white; 
+  border: none;
+}
+#newBkMrkBtn:hover {
+  background: linear-gradient(to right, #2563eb, #4338ca);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}

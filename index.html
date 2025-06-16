@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./images/icons8-bookmark-64.png"
+    />
+    <!-- link to sweetalert2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css"
+    />
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- link to custom css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <section
+      class="d-flex flex-column align-content-center justify-content-center my-4"
+    >
+      <div class="container text-center">
+        <i
+          class="fa-regular fa-bookmark text-white bg-danger p-3 mb-4 fs-1 rounded-4 main-icon"
+        ></i>
+        <h1 class="siteTitle display-4 fw-bold">Bookmark Manager</h1>
+        <h4 class="text-muted fs-5 mb-5 w-75 mx-auto">
+          Organize and access your favorite websites with ease. Save, manage,
+          and visit your bookmarks in one beautiful place.
+        </h4>
+        <div class="formContainer w-75 mx-auto p-5 rounded">
+          <div
+            class="formHeader d-flex align-items-center justify-content-center gap-2"
+          >
+            <i
+              class="fa-solid fa-plus text-white p-2 fs-5 rounded-3 main-icon"
+            ></i>
+            <h3 class="m-0">Add New Bookmark</h3>
+          </div>
+          <p class="text-muted mt-2">
+            Save your favorite website for quick access
+          </p>
+          <div class="inputs row my-3">
+            <div class="nameInput col-12 col-md-6 d-flex flex-column align-items-start">
+              <label for="siteName" class="ms-2 my-2 fs-5"
+                ><i class="fa-solid fa-tag"></i> Bookmark Name</label
+              >
+              <input type="text" class="form-control" id="siteName" />
+            </div>
+            <div class="urlInput col-12  col-md-6  d-flex flex-column align-items-start">
+              <label for="siteURL" class="ms-2 my-2 fs-5"
+                ><i class="fa-solid fa-globe"></i> Website URL</label
+              >
+              <input type="email" class="form-control" id="siteURL" />
+            </div>
+          </div>
+          <button
+            type="button"
+            id="newBkMrkBtn"
+            class="btn w-100 p-2 fw-bold fs-5"
+          >
+            Save Bookmark
+          </button>
+        </div>
+        <div class="bookmarksTable my-5 p-4 rounded">
+          <div class="tableHeader d-flex justify-content-between mb-4">
+            <div
+              class="title d-flex justify-content-center gap-2 align-items-center"
+            >
+              <i
+                class="fa-regular fa-bookmark text-white p-2 fs-6 rounded-3 main-icon"
+              ></i>
+              <h3 class="m-0">My Bookmarks</h3>
+            </div>
+            <p class="counter bg-dark-subtle rounded-4 text-primary p-2 m-0">
+              <span id="bkmrksNum"></span> saved
+            </p>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="bookmarksList">
+              <!-- Bookmarks will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- link to sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
+    <!-- link to bootstrap -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- link to custom js -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
